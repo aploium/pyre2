@@ -2,7 +2,7 @@
 import sys
 import os
 import re
-from distutils.core import setup, Extension, Command
+from setuptools import setup, Extension, Command
 
 MINIMUM_CYTHON_VERSION = '0.13'
 
