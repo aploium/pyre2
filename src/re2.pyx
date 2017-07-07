@@ -459,7 +459,7 @@ cdef class Pattern:
     cdef _print_pattern(self):
         cdef _re2.cpp_string * s
         s = <_re2.cpp_string *>_re2.addressofs(self.re_pattern.pattern())
-        print cpp_to_pystring(s[0]) + "\n"
+        print(cpp_to_pystring(s[0]) + "\n")
         sys.stdout.flush()
 
 
