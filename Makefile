@@ -6,7 +6,7 @@ test: install
 	(cd tests && python test_re.py)
 
 install3:
-	python3 setup.py install --user --cython
+	python3 setup.py install --cython
 
 test3: install3
 	(cd tests && python3 re2_test.py)
